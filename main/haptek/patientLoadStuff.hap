@@ -1,0 +1,14 @@
+#Haptek  Version= 1.00 HapType= script FileType= text
+
+### mood works when by herself
+\Load [file= kevin.haptar]
+\SetName [name= kevin]
+\Translate [figure= kevin x= 0 y= 20 z= 100 t=0]
+\Scale[ x= 1.5 y= 1.5 z= 1.5]
+\Rotate [figure= kevin y= 0 t= 0]
+\setmousemode [i0= 7 i1= 3]
+
+
+###whatever character is loaded last is the mood that will show
+
+

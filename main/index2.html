@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Dr TIA!</title>
+<!--these are needed for the player and one is a helper file-->
+<script language="JavaScript" src="haptek/HapPlayer411.js", "A"></script>
+<script language="JavaScript" src="haptek/HapToDoList.js", "A"></script>
+<!-- these came with the editor i was using-->
+<meta content="Arachnophilia 5.3" name="GENERATOR" />
+<meta content="Arachnophilia 5.3" name="FORMATTER" />
+<object id="SpeechTags" CLASSID="clsid:33cbfc53-a7de-491a-90f3-0e782a7e347a" VIEWASTEXT="">
+</object>
+
+<style type="text/css">
+.style1 {
+	color: #FFFFFF;
+}
+.style2 {
+	color: #FF0000;
+}
+.style3 {
+	color: #FFA500;
+	font-size: large;
+	font-family: "Bradley Hand ITC";
+}
+
+</style>
+
+</head>
+
+<body>
+<center>
+<h1>Dr. TIA<h1></h1>
+<form action="" name="scoreboardform" method="post">
+<span class="style3"><strong>Score: </strong></span>
+<textarea wrap = "virtual" name="scoreboardarea" rows = 1 cols = 4 STYLE = "background-color:#000000;font-family: Verdana, Helvetica; font-weight: bold"  id="scoreboardarea" readonly class="style1">0</textarea><span class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="style3"><strong>&nbsp;Question No: </strong></span></span>
+<textarea wrap = "virtual" name="scoreboard1area" rows = 1 cols = 4 STYLE = "background-color:#000000;font-family: Verdana, Helvetica; font-weight: bold" id="scoreboard1area" readonly class="style1">0</textarea><span class="style1">
+</span>
+</form>
+<SCRIPT>
+	// This is the box that will load with the picture in it
+	VFBox(800,600,"none"); 
+	
+	// This part puts everything in the queue
+	AddToInitQueue("UseBackground('http://ccis004.uncc.edu/~rsakpal/Patient_TBI/main/Doctors_Office_4.jpg', 'A');");
+	AddToInitQueue("CharacterInit();");
+	AddToInitQueue("HapToDo_Pulse();");
+	AddToInitQueue("setTimeout('waitForHaptek()', 500)");
+	
+	function CharacterInit() {
+		HapToDo_Clear();
+		var dl = new Downloader();
+		dl.AddFile("http://ccis004.uncc.edu/~rsakpal/Patient_TBI/main/kevin.haptar", "A");
+		//dl.AddFile("http://ccis004.uncc.edu/~rsakpal/chestr/scott.htr", "A");
+		dl.AddFile("http://ccis004.uncc.edu/~rsakpal/Patient_TBI/main/TialoadStuff.hap", "A");
+		dl.FinishedString("\\load [file= [TialoadStuff.hap]]");
+		dl.DoIt();		
+	} // End CharacterInit()
+	
+	
+	function waitForHaptek() {
+		if (HapQuery("status download") == "DOWNLOADING") {
+			setTimeout("waitForHaptek()", 500);
+		} else {
+			parent.startgame1();
+		}// End if
+	} // End waitForHaptek()
+	
+</SCRIPT>
+
+</center>
+</body>
+
+</html>
+
+
+
+
+

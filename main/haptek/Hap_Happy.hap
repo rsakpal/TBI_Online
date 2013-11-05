@@ -1,0 +1,33 @@
+#Haptek  Version= 1.00 Name= Hap_Happy  HapType= script FileType= text
+##standard
+\SetSwitchIntensity [switch= expMouthHappy f0= 0.885000 t= 0.4]
+
+\SetSwitchIntensity [switch= expMouthSad f0= 0.000000 t= 0.4]
+\SetSwitchIntensity [switch= expBrowsSad f0= 0.000000 t= 0.4]
+
+\SetSwitchIntensity [switch= expMouthMad f0= 0.000000 t= 0.4]
+\SetSwitchIntensity [switch= expBrowsMad f0= 0.000000 t= 0.4]
+
+\SetSwitchIntensity [switch= expEyesTrust f0= 1.000000 t= 0.4]
+\SetSwitchIntensity [switch= antiTrust f0= 0.900000 t= 0.4]
+
+\SetSwitchIntensity [switch= expEyesDistrust f0= 0.500000 t= 0.4]
+\SetSwitchIntensity [switch= antiDistrust f0= 0.500000 t= 0.4]
+\SetSwitchIntensity [switch= blinks f0= 1.000000 t= 0.4]
+
+\SetSwitchIntensity [switch= expBrowsCurious f0= 0.310000 t= 0.4]
+
+\SetSwitch [switch= ego state= mid]
+
+\SetSwitch [switch= agressMaster state= confront]
+
+\SetSwitchIntensity [switch= energyHigh f0= 0.700000 t= 0.4]
+\SetSwitchIntensity [switch= energyLow f0= 0.000000 t= 0.4]
+\SetSwitchIntensity [switch= talkBob f0= 1.150000 t= 0.4]
+\SetSwitchIntensity [switch= headEvadeHighE f0= 0.700000 t= 0.4]
+\SetSwitchIntensity [switch= headEvadeLowE f0= 0.300000 t= 0.4]
+\SetSwitchIntensity [switch= HighEnergyNoise f0= 0.700000 t= 0.4]
+\SetSwitchIntensity [switch= LowEnergyNoise f0= 0.000000 t= 0.4]
+\SetSwitchIntensity [switch= browTalk f0= 0.700000 t= 0.4]
+\SetSwitchIntensity [switch= visemes f0= 1.280000 t= 0.4]
+
