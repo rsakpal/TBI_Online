@@ -1,0 +1,19 @@
+<grammar version="1.0" xml:lang="en-US" xmlns="http://www.w3.org/2001/06/grammar" root="patientGrammar" tag-format="semantics-ms/1.0">
+	<rule id="patientGrammar" scope="public">
+		<one-of>
+			<item>Good Morning Mr Smith How are you doing today<tag> $.hex={}; $.hex._value="Good Morning"; </tag></item>
+			<item>Do you have any questions for me<tag> $.hex={}; $.hex._value="Last Question"; </tag></item>
+			<item>Can describe the events surrounding your accident<tag> $.hex={}; $.hex._value="events surrounding the accident"; </tag></item>
+			<item>Did you lose consciousness<tag> $.hex={}; $.hex._value="consciousness"; </tag></item>
+			<item>Green<tag> $.hex={}; $.hex._value="#008000"; </tag></item>
+			<item>Indigo <tag> $.hex={}; $.hex._value="#4B0082"; </tag></item>
+			<item>Orange<tag> $.hex={}; $.hex._value="#FFA500"; </tag></item>
+			<item>Pink<tag> $.hex={}; $.hex._value="#FFC0CB"; </tag></item>
+			<item>Purple<tag> $.hex={}; $.hex._value="#800080"; </tag></item>
+			<item>Red<tag> $.hex={}; $.hex._value="#FF0000"; </tag></item>
+			<item>Violet<tag> $.hex={}; $.hex._value="#EE82EE"; </tag></item>
+			<item>White<tag> $.hex={}; $.hex._value="#FFFFFF"; </tag></item>
+			<item>Yellow<tag> $.hex={}; $.hex._value="#FFFF00"; </tag></item>
+		</one-of>
+	</rule>
+</grammar>

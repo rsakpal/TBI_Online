@@ -14,7 +14,8 @@ function recognized()	{
 }
 						
 function notrecognized()	{
-	alert("Speech Not-recognized");
+	alert("Speech Not-Recognized: " + listen.status);
+	recognized();
 }
 						
 function silence()	{

@@ -86,7 +86,7 @@
 	<?import namespace="salt" implementation="#SpeechTags" />
 
 	<salt:listen id="listen" xml:lang="en-US" onreco="recognized()" onnoreco="notrecognized()" onsilence="silence()" >
-		<salt:grammar name="colours" src="colours.grxml"> 
+		<salt:grammar name="patientGrammar" src="patientGrammar.grxml"> 
         </salt:grammar>
 	</salt:listen>
 	
@@ -139,7 +139,7 @@
 					<p class="qy"><textarea rows="10" cols="98" id="query">Type your query/questions here</textarea></p>
 					<div class="sb">
 						<button class="IR" onClick="informationRetrieval();">Enter Query</button>
-						<button onClick="listen.start();">Speech</button>
+						<!--<button onClick="listen.start();">Speech</button>-->
 						<button onClick="questionHint();">Hint</button>
 						<button class="ex" onClick="logout();">Exit</button>
 					</div>
